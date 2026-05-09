@@ -3,49 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Antriksh Srivastava | Research Profile</title>
-  <meta name="description" content="Academic profile of Antriksh Srivastava, Postdoctoral Researcher working on crop modeling, climate adaptation, and plant-environment interactions.">
+  <title>Antriksh Srivastava | Crop Modeling and Plant-Environment Research</title>
+  <meta name="description" content="Academic website of Antriksh Srivastava, Postdoctoral Researcher working on crop modeling, canopy fluxes, water use, climate adaptation, and machine learning.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Instrument+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
+<body data-page="home">
   <div class="page-shell">
     <header class="site-header">
-      <div class="brand">
+      <a class="brand" href="index.html" aria-label="Go to homepage">
         <span class="brand-mark">AS</span>
-        <div>
-          <p class="eyebrow">Academic Website</p>
-          <h1>Antriksh Srivastava</h1>
-        </div>
-      </div>
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#experience">Experience</a>
-        <a href="#publications">Publications</a>
-        <a href="#contact">Contact</a>
+        <span>
+          <span class="eyebrow">Academic Website</span>
+          <span class="brand-title">Antriksh Srivastava</span>
+        </span>
+      </a>
+      <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav class="site-nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="research.html" data-nav="research">Research</a>
+        <a href="experience.html" data-nav="experience">Experience</a>
+        <a href="publications.html" data-nav="publications">Publications</a>
+        <a href="tools.html" data-nav="tools">Tools</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
       </nav>
     </header>
-
     <main>
-      <section class="hero" id="about">
+      <section class="hero">
         <div class="hero-copy">
           <p class="eyebrow">Postdoctoral Researcher, CSRE, IIT Bombay</p>
-          <h2>Process-based crop modeling for climate resilience, water use, and plant-scale intelligence.</h2>
+          <h1>Process-based crop modeling for <span>climate-resilient agriculture.</span></h1>
           <p class="lead">
-            I work at the intersection of crop physiology, environmental modeling, and machine learning to understand how
-            plants respond to changing climate and how those responses can inform adaptation strategies for agricultural systems.
+            I work at the intersection of crop physiology, environmental modeling, and machine learning to understand how plants respond to changing climate, water stress, and management decisions.
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="mailto:srivastava.antriksh96@gmail.com">Email Me</a>
-            <a class="button button-secondary" href="https://github.com/GitHub-srivastava" target="_blank" rel="noreferrer">GitHub Profile</a>
+            <a class="button button-primary" href="research.html">Explore Research</a>
+            <a class="button button-secondary" href="publications.html">View Publications</a>
+            <a class="button button-secondary" href="mailto:srivastava.antriksh96@gmail.com">Email Me</a>
           </div>
         </div>
         <aside class="hero-card">
           <img src="https://avatars.githubusercontent.com/u/59443914?v=4" alt="Portrait of Antriksh Srivastava" class="profile-image">
-          <dl>
+          <dl class="profile-meta">
             <div>
               <dt>Current Role</dt>
               <dd>Postdoctoral Researcher</dd>
@@ -55,196 +56,72 @@
               <dd>IIT Bombay</dd>
             </div>
             <div>
-              <dt>Focus</dt>
+              <dt>Research Focus</dt>
               <dd>Crop modeling, canopy fluxes, climate adaptation</dd>
             </div>
           </dl>
         </aside>
       </section>
 
-      <section class="section-grid" id="research">
+      <section class="stat-strip reveal">
+        <div class="stat"><strong>4</strong><span>Core research directions</span></div>
+        <div class="stat"><strong>2</strong><span>Process-based model families</span></div>
+        <div class="stat"><strong>ML</strong><span>Hybrid modeling and parameter estimation</span></div>
+        <div class="stat"><strong>WUE</strong><span>Water-use efficiency and climate response</span></div>
+      </section>
+
+      <section class="panel section-grid reveal">
         <div>
           <p class="section-label">Research Focus</p>
-          <h3>Questions that connect physiology, climate, and agricultural systems</h3>
+          <h2>Questions that connect physiology, climate, and agricultural systems</h2>
         </div>
         <div class="cards">
-          <article class="card">
-            <h4>Crop Modeling Under Climate Change</h4>
+          <article class="card reveal reveal-delay-1">
+            <span class="card-icon">01</span>
+            <h3>Crop Modeling Under Climate Change</h3>
             <p>Process-based modeling to evaluate plant behavior, water demand, and adaptation pathways under present and future climates.</p>
           </article>
-          <article class="card">
-            <h4>Leaf-to-Canopy Scaling</h4>
+          <article class="card reveal reveal-delay-2">
+            <span class="card-icon">02</span>
+            <h3>Leaf-to-Canopy Scaling</h3>
             <p>Mechanistic frameworks that link leaf-scale photosynthesis, energy balance, and stomatal responses to canopy-scale fluxes.</p>
           </article>
-          <article class="card">
-            <h4>ML and Optimization</h4>
-            <p>Parameter estimation, calibration, uncertainty analysis, and hybrid modeling workflows that strengthen biophysical models.</p>
+          <article class="card reveal reveal-delay-1">
+            <span class="card-icon">03</span>
+            <h3>ML and Optimization</h3>
+            <p>Parameter estimation, calibration, uncertainty analysis, and hybrid workflows that strengthen biophysical models.</p>
           </article>
-          <article class="card">
-            <h4>Agricultural Risk and Adaptation</h4>
+          <article class="card reveal reveal-delay-2">
+            <span class="card-icon">04</span>
+            <h3>Agricultural Risk and Adaptation</h3>
             <p>Climate-risk assessment and water-saving strategies for agricultural systems facing environmental stress and resource limits.</p>
           </article>
         </div>
       </section>
 
-      <section class="section-grid" id="experience">
+      <section class="panel section-grid reveal">
         <div>
-          <p class="section-label">Experience</p>
-          <h3>Research roles rooted in model development and interdisciplinary collaboration</h3>
+          <p class="section-label">Current Direction</p>
+          <h2>From leaf biochemistry to field-scale decisions</h2>
         </div>
-        <div class="timeline">
-          <article class="timeline-item">
-            <div class="timeline-meta">
-              <span>2025 to Present</span>
-              <strong>IIT Bombay</strong>
-            </div>
-            <div>
-              <h4>Postdoctoral Researcher, CSRE</h4>
-              <p>Developing an ML-process-based canopy modeling framework to quantify genotype trait variation across the season and connect it to crop water-saving strategies.</p>
-              <p>Coupling vLeaf with DSSAT-CERES to drive canopy-scale carbon and water fluxes using two-leaf photosynthesis and energy-balance physics.</p>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-meta">
-              <span>2019 to 2025</span>
-              <strong>IIT Madras</strong>
-            </div>
-            <div>
-              <h4>Research Scholar, HWRE, Civil Engineering</h4>
-              <p>Developed vLeaf and vCanopy, process-based models for simulating leaf-to-canopy carbon, water, and energy fluxes under field conditions.</p>
-              <p>Led parameterization, validation, and climate-scenario studies on stomatal conductance and water-use efficiency tradeoffs, while building reusable workflows and web-based research tools.</p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section-grid">
         <div>
-          <p class="section-label">Education</p>
-          <h3>Training in civil engineering, environmental systems, and computational modeling</h3>
-        </div>
-        <div class="stack-list">
-          <article>
-            <h4>PhD (Integrated MS-PhD), Civil Engineering</h4>
-            <p>Indian Institute of Technology Madras, 2019 to 2025</p>
-            <p class="muted">Dissertation: Tradeoffs in Enhancing Water-Use Efficiency in Crops</p>
-          </article>
-          <article>
-            <h4>B.Tech., Civil Engineering</h4>
-            <p>National Institute of Technology Tiruchirappalli, 2015 to 2019</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section-grid" id="publications">
-        <div>
-          <p class="section-label">Selected Publications</p>
-          <h3>Recent work in plant physiology, canopy modeling, and transport systems</h3>
-        </div>
-        <div class="stack-list publication-list">
-          <article>
-            <h4>How do water use efficiency gains from leaf-level stomatal conductance reduction scale at the crop canopy under current and future climates?</h4>
-            <p>Srivastava, A., Das, A., Srinivasan, V., and Stephen P. Long</p>
-            <p class="muted">Under revision</p>
-          </article>
-          <article>
-            <h4>Stomatal conductance reduction tradeoffs in maize leaves: A theoretical study</h4>
-            <p>Srivastava, A., Srinivasan, V., and Stephen P. Long</p>
-            <p class="muted">Plant, Cell &amp; Environment, 2024</p>
-          </article>
-          <article>
-            <h4>Analytical solutions to three-dimensional reactive contaminant transport problems involving point, line, and area sources</h4>
-            <p>Sangani, J., Srivastava, A., and Srinivasan, V.</p>
-            <p class="muted">Transport in Porous Media, 2022</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section-grid">
-        <div>
-          <p class="section-label">Research Tools</p>
-          <h3>Models and applications developed for scientific analysis and practical use</h3>
-        </div>
-        <div class="cards">
-          <article class="card tool-card">
-            <h4><a href="https://github.com/GitHub-srivastava/vLeaf" target="_blank" rel="noreferrer">vLeaf</a></h4>
-            <p>A steady-state leaf-scale model for simulating mass and energy exchange between the leaf and its microenvironment.</p>
-            <span class="tag">MATLAB / Python</span>
-          </article>
-          <article class="card tool-card">
-            <h4><a href="https://github.com/GitHub-srivastava/vCanopy" target="_blank" rel="noreferrer">vCanopy</a></h4>
-            <p>A multi-layer canopy-scale model that integrates radiation transfer, turbulent transport, and leaf-level processes.</p>
-            <span class="tag">MATLAB</span>
-          </article>
-          <article class="card tool-card">
-            <h4>PhotoFit</h4>
-            <p>A Streamlit-based tool for estimating photosynthetic parameters from A-Ci gas-exchange data for C4 leaves.</p>
-            <span class="tag">Python / Streamlit</span>
-          </article>
-          <article class="card tool-card">
-            <h4>vScreen</h4>
-            <p>An ongoing cloud-based screening tool to predict the fate and transport of reactive groundwater contaminants.</p>
-            <span class="tag">Python / Streamlit</span>
-          </article>
-        </div>
-      </section>
-
-      <section class="section-grid">
-        <div>
-          <p class="section-label">Teaching and Honors</p>
-          <h3>Academic service, mentoring, and recognition</h3>
-        </div>
-        <div class="two-column-list">
-          <div>
-            <h4>Teaching</h4>
-            <ul>
-              <li>Teaching Assistant for Water Resources Engineering, Numerical Techniques, Optimization Methods, and Soil-Plant-Atmospheric Continuum.</li>
-              <li>Supported tutorials, doubt-clearing sessions, grading, and workshop instruction in crop and water systems modeling.</li>
-              <li>Session Instructor for the South Indian Plant System Modeling Workshop in January 2024.</li>
-            </ul>
-          </div>
-          <div>
-            <h4>Honors</h4>
-            <ul>
-              <li>ANRF travel grant for iCROPM 2026 conference, Italy.</li>
-              <li>Best Poster Presentation Award, World Water Day at IIT Madras, March 2025.</li>
-              <li>PMRF Scholarship for PhD at IIT Madras, 2020 to 2024.</li>
-              <li>University Gold Medal in B.Tech. Civil Engineering at NIT Tiruchirappalli, 2019.</li>
-            </ul>
+          <p class="panel-lead">
+            My work combines mechanistic plant physiology with computational workflows, with a focus on improving how crop models represent carbon uptake, energy balance, and water-use behavior under stress.
+          </p>
+          <div class="action-row">
+            <a class="button button-primary" href="tools.html">Research Tools</a>
+            <a class="button button-secondary" href="experience.html">Academic Background</a>
           </div>
         </div>
-      </section>
-
-      <section class="section-grid">
-        <div>
-          <p class="section-label">Technical Skills</p>
-          <h3>Computational tools used across modeling, inference, and data-driven research</h3>
-        </div>
-        <div class="skill-groups">
-          <article>
-            <h4>Programming</h4>
-            <p>Python, MATLAB, R, GPU-accelerated computing</p>
-          </article>
-          <article>
-            <h4>Libraries and Platforms</h4>
-            <p>PyTorch, scikit-learn, GEKKO, Streamlit, QGIS, HYDRUS-1D</p>
-          </article>
-          <article>
-            <h4>Methods</h4>
-            <p>Deep learning, physics-informed neural networks, optimization algorithms, calibration, and uncertainty analysis</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="contact-section" id="contact">
-        <p class="section-label">Contact</p>
-        <h3>Open to academic collaboration, modeling discussions, and research conversations</h3>
-        <p>
-          Reach me at <a href="mailto:srivastava.antriksh96@gmail.com">srivastava.antriksh96@gmail.com</a>
-          or visit <a href="https://github.com/GitHub-srivastava" target="_blank" rel="noreferrer">my GitHub profile</a>.
-        </p>
       </section>
     </main>
+    <footer class="footer">
+      <div class="footer-inner">
+        <span>© <span data-current-year></span> Antriksh Srivastava</span>
+        <span>Built as a static GitHub Pages site.</span>
+      </div>
+    </footer>
   </div>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
